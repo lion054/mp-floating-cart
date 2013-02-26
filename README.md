@@ -17,7 +17,7 @@ There are two ways to download MP Floating Cart Plugin:
 
 1. Download the plugin from <a href="http://www.marketpressthemes.com/login">MarketPressThemes.com</a>. You'll need to create an account first before you can proceed to the user dashboard to download the plugin.
 
-2. Alternately, you can also download the plugin through GitHub by pressing the 'ZIP' button above. Once you've downloaded the zip file, proceed to unpack the zip file and rename the folder to: 'floating-cart', then zip / compress the renamed folder and upload it to your WordPress site.
+2. Alternately, you can also download the plugin through GitHub by pressing the 'ZIP' button above. Once you've downloaded the zip file, proceed to unpack the zip file and rename the folder to: 'mp-floating-cart', then zip / compress the renamed folder and upload it to your WordPress site.
 
 <h2><u>Join us</u></h2>
 
