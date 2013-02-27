@@ -1,7 +1,7 @@
 MarketPress Floating Cart Plugin
 =======================================
 
-~Current Version:1.0.0~
+~Current Version:1.0.1~
 
 Author: Nathan Onn - <a href="http://www.marketpressthemes.com">MarketPressThemes.com</a>
 
@@ -26,6 +26,9 @@ From time to time, we'll be releasing <b>more themes and plugins</b> (free and p
 If you're new to <a href="http://www.marketpressthemes.com" target="_blank">MarketPressThemes.com</a>, You might want to <a href="http://www.marketpressthemes.com/login" target="_blank">create a free account</a> with us to stay in the loop of the latest development of our themes and plugins.
 
 <h2><u>Change Log</u></h2>
+
+Version 1.0.1 -
+	Fixed empty array issue for floating_cart_total_amount_in_cart function
 
 version 1.0 - 26th February 2013
 

@@ -1,3 +1,6 @@
+Version 1.0.1 -
+	Fixed empty array issue for floating_cart_total_amount_in_cart function
+
 version 1.0 - 26th February 2013
 
 	first release

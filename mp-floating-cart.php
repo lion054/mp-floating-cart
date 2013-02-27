@@ -4,7 +4,7 @@ Plugin Name: MP Floating Cart
 Plugin URI: http://www.smashingadvantage.com
 Description: A shopping cart that hovers or "floats" above your MarketPress site.
 Author: Nathan Onn (MarketPressThemes.com)
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://www.smashingadvantage.com
 
 Copyright 2012 - 2013 Smashing Advantage Enterprise.
@@ -404,19 +404,25 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 		    	$selected_cart = $global_cart;
 
 		    $totals = array();
-		    
-		    foreach ($selected_cart as $bid => $cart) {
 
-			if (is_multisite())
-		        switch_to_blog($bid);
+		    if ( !empty($selected_cart)) {
 
-		   	foreach ($cart as $product_id => $variations) {
-		        foreach ($variations as $variation => $data) {
-		          $totals[] = $data['price'] * $data['quantity'];
-		        }
-		      }
+			    foreach ($selected_cart as $bid => $cart) {
+
+					if (is_multisite())
+				        switch_to_blog($bid);
+
+				    if (!empty($cart)) {
+					   	foreach ($cart as $product_id => $variations) {
+					        foreach ($variations as $variation => $data) {
+					          $totals[] = $data['price'] * $data['quantity'];
+					        }
+					      }
+				    }
+
+			    }
 		    }
-
+		    
 			if (is_multisite())
 		      switch_to_blog($current_blog_id);
 
@@ -448,7 +454,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 					'zip_url' => 'https://github.com/nathanonn/mp-floating-cart/zipball/master',
 					'sslverify' => true,
 					'requires' => '3.5',
-					'tested' => '3.5',
+					'tested' => '3.5.1',
 					'readme' => 'README.md',
 					'access_token' => '',
 				);
